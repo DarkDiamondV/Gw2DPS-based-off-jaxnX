@@ -121,7 +121,7 @@
 color: #8BB2DA;</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="soloSettings">
       <property name="geometry">
@@ -136,6 +136,13 @@ color: #8BB2DA;</string>
        <string>Solo: Player Bar Settings</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="checkBoxSoloProfColors">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="1">
         <widget class="QComboBox" name="professionSoloComboBox">
          <property name="styleSheet">
@@ -237,34 +244,6 @@ QComboBox QAbstractItemView {
          </item>
         </widget>
        </item>
-       <item row="0" column="0">
-        <widget class="QCheckBox" name="checkBoxSoloProfColors">
-         <property name="text">
-          <string>Color</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QCheckBox" name="checkBoxSoloCDamage">
-         <property name="text">
-          <string>(Show CondiDmg)</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QCheckBox" name="checkBoxSoloCPerDmg">
-         <property name="text">
-          <string>(Percental Condi)</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QCheckBox" name="checkBoxSoloCDPS">
-         <property name="text">
-          <string>(Show CondiDPS)</string>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="0">
         <widget class="QCheckBox" name="checkBoxSoloDamage">
          <property name="text">
@@ -276,19 +255,19 @@ QComboBox QAbstractItemView {
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QCheckBox" name="checkBoxSoloDPS">
+        <widget class="QCheckBox" name="checkBoxSoloName">
          <property name="text">
-          <string>Show DPS</string>
+          <string>Show Name</string>
          </property>
          <property name="checked">
           <bool>true</bool>
          </property>
         </widget>
        </item>
-       <item row="4" column="0">
-        <widget class="QCheckBox" name="checkBoxSoloName">
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="checkBoxSoloDPS">
          <property name="text">
-          <string>Show Name</string>
+          <string>Show DPS</string>
          </property>
          <property name="checked">
           <bool>true</bool>
@@ -302,8 +281,8 @@ QComboBox QAbstractItemView {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>294</width>
-        <height>124</height>
+        <width>312</width>
+        <height>150</height>
        </rect>
       </property>
       <attribute name="label">
@@ -480,13 +459,6 @@ QComboBox QAbstractItemView {
          </property>
          <property name="checked">
           <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QCheckBox" name="checkBoxGroupActivity">
-         <property name="text">
-          <string>(Show Activity)</string>
          </property>
         </widget>
        </item>

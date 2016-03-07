@@ -54,9 +54,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(uiConfig->checkBoxSoloName, SIGNAL(clicked(bool)), this, SLOT(SNameChanged()));
     QObject::connect(uiConfig->checkBoxSoloDamage, SIGNAL(clicked(bool)), this, SLOT(SDamageChanged()));
     QObject::connect(uiConfig->checkBoxSoloDPS, SIGNAL(clicked(bool)), this, SLOT(SDPSChanged()));
-    QObject::connect(uiConfig->checkBoxSoloCDamage, SIGNAL(clicked(bool)), this, SLOT(SCDamageChanged()));
-    QObject::connect(uiConfig->checkBoxSoloCPerDmg, SIGNAL(clicked(bool)), this, SLOT(SCPerDmgChanged()));
-    QObject::connect(uiConfig->checkBoxSoloCDPS, SIGNAL(clicked(bool)), this, SLOT(SCDPSChanged()));
     // connecting configurator - group display settings
     QObject::connect(uiConfig->checkBoxGroupProfColors, SIGNAL(clicked(bool)), this, SLOT(GProfSettingsChanged()));
     QObject::connect(uiConfig->professionComboBox, SIGNAL(currentIndexChanged(QString)), this, SLOT(GProfChanged(QString)));
@@ -65,7 +62,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(uiConfig->checkBoxGroupDamage, SIGNAL(clicked(bool)), this, SLOT(GDamageChanged()));
     QObject::connect(uiConfig->checkBoxGroupPerDmg, SIGNAL(clicked(bool)), this, SLOT(GPerDmgChanged()));
     QObject::connect(uiConfig->checkBoxGroupDPS, SIGNAL(clicked(bool)), this, SLOT(GDPSChanged()));
-    QObject::connect(uiConfig->checkBoxGroupActivity, SIGNAL(clicked(bool)), this, SLOT(GActivityChanged()));
     // connecting configurator - accuracy settings
     QObject::connect(uiConfig->comboBoxScreenshots, SIGNAL(currentIndexChanged(QString)), screenRecorder, SLOT(SetScreenshotsPerSecond(QString)));
     QObject::connect(uiConfig->comboBoxUpdates, SIGNAL(currentIndexChanged(QString)), dmgMeter, SLOT(SetUpdatesPerSecond(QString)));
@@ -174,9 +170,6 @@ MainWindow::MainWindow(QWidget *parent) :
     displaySName=uiConfig->checkBoxSoloName->isChecked();
     displaySDmg=uiConfig->checkBoxSoloDamage->isChecked();
     displaySDPS=uiConfig->checkBoxSoloDPS->isChecked();
-    displaySCDmg=uiConfig->checkBoxSoloCDamage->isChecked();
-    displaySCPer=uiConfig->checkBoxSoloCPerDmg->isChecked();
-    displaySCDPS=uiConfig->checkBoxSoloCDPS->isChecked();
     // group settings
     displayGProfColor=uiConfig->checkBoxGroupProfColors->isChecked();
     displayGPos=uiConfig->checkBoxGroupPosition->isChecked();
@@ -184,7 +177,6 @@ MainWindow::MainWindow(QWidget *parent) :
     displayGPer=uiConfig->checkBoxGroupPerDmg->isChecked();
     displayGDmg=uiConfig->checkBoxGroupDamage->isChecked();
     displayGDPS=uiConfig->checkBoxGroupDPS->isChecked();
-    displayGAct=uiConfig->checkBoxGroupActivity->isChecked();
 
     uiConfig->professionComboBox->setCurrentIndex(0);
     m_MyProfession=uiConfig->professionComboBox->currentIndex();

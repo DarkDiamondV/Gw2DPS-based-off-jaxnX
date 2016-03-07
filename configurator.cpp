@@ -21,9 +21,6 @@ Configurator::Configurator(QWidget *parent) :
     Settings::ReadSettings(ui->checkBoxSoloName);
     Settings::ReadSettings(ui->checkBoxSoloDamage);
     Settings::ReadSettings(ui->checkBoxSoloDPS);
-    Settings::ReadSettings(ui->checkBoxSoloCDamage);
-    Settings::ReadSettings(ui->checkBoxSoloCPerDmg);
-    Settings::ReadSettings(ui->checkBoxSoloCDPS);
 
     Settings::ReadSettings(ui->checkBoxGroupProfColors);
     Settings::ReadSettings(ui->professionComboBox);
@@ -32,7 +29,6 @@ Configurator::Configurator(QWidget *parent) :
     Settings::ReadSettings(ui->checkBoxGroupDamage);
     Settings::ReadSettings(ui->checkBoxGroupPerDmg);
     Settings::ReadSettings(ui->checkBoxGroupDPS);
-    Settings::ReadSettings(ui->checkBoxGroupActivity);
 
     Settings::ReadSettings(ui->comboBoxScreenshots);
     Settings::ReadSettings(ui->comboBoxUpdates);
@@ -48,9 +44,6 @@ Configurator::~Configurator()
     Settings::WriteSettings(ui->checkBoxSoloName);
     Settings::WriteSettings(ui->checkBoxSoloDamage);
     Settings::WriteSettings(ui->checkBoxSoloDPS);
-    Settings::WriteSettings(ui->checkBoxSoloCDamage);
-    Settings::WriteSettings(ui->checkBoxSoloCPerDmg);
-    Settings::WriteSettings(ui->checkBoxSoloCDPS);
 
     Settings::WriteSettings(ui->checkBoxGroupProfColors);
     Settings::WriteSettings(ui->professionComboBox);
@@ -59,7 +52,6 @@ Configurator::~Configurator()
     Settings::WriteSettings(ui->checkBoxGroupDamage);
     Settings::WriteSettings(ui->checkBoxGroupPerDmg);
     Settings::WriteSettings(ui->checkBoxGroupDPS);
-    Settings::WriteSettings(ui->checkBoxGroupActivity);
 
     Settings::WriteSettings(ui->comboBoxScreenshots);
     Settings::WriteSettings(ui->comboBoxUpdates);
