@@ -201,7 +201,7 @@ MainWindow::MainWindow(QWidget *parent) :
 void GW2::MainWindow::StartupPref()
 {
     ui->toolBar->setContextMenuPolicy(Qt::PreventContextMenu);
-    this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::X11BypassWindowManagerHint);
+    this->setWindowFlags(Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
     this->setAttribute(Qt::WA_TranslucentBackground);
 
     runMe();

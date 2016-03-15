@@ -38,6 +38,9 @@ int main(int argc, char *argv[])
     GW2::MainWindow w;
     w.show();
 
+    HWND handle = (HWND) w.windowHandle()->winId();
+    SetWindowPos(handle, HWND_TOPMOST, 0, 0, 0, 0, SWP_SHOWWINDOW|SWP_NOSIZE|SWP_NOMOVE);
+
     return a.exec();
 }
 
