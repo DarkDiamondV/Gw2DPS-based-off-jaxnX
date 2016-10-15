@@ -1,3 +1,6 @@
+# Changes by me
+Changed the stay on top to work more consistently.
+
 # GW2DPS
 Based on JaxnX, modified by Kozzy.5974, DoM.8396 & Tyrox.1352
 
